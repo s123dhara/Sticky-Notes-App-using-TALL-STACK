@@ -5,7 +5,7 @@
             <p class="py-2">Are you sure you want to logout?</p>
             <div class="modal-action">
                 <form method="dialog">
-                    <button class="btn btn-warning btn-sm" wire:click='logout'>Yes Logout it!</button>
+                    <button class="btn btn-error btn-sm" wire:click='logout'>Yes Logout it!</button>
                     <button class="btn btn-sm">Close</button>
                 </form>
             </div>
