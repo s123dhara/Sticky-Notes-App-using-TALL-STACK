@@ -30,7 +30,7 @@ class ShowFile extends Component
 
     public function render()
     {
-        sleep(3);
+        sleep(1);
         $file = Files::find($this->id);
         return view('livewire.files.showfile', ["file" => $file]);
     }

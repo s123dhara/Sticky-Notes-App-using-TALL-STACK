@@ -27,11 +27,7 @@ class Dashboard extends Component
             return redirect()->route('login'); // Redirect to the login page
         }
 
-        // Query the files for the authenticated user
-        $files = Files::select('*')
-            ->where('user_id', $user->id)
-            ->orderBy('id', 'desc')
-            ->get();
+        $files = Files::select('*')->where('user_id', $user->id)->where('title', 'like', '%' . $this->search . '%')->orderBy('id', 'desc')->cursorPaginate(20);
 
         // Render the view with files
         return view('livewire.dashboard', ['files' => $files]);

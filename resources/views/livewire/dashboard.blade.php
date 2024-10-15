@@ -18,7 +18,7 @@
                                     <p class="card-title">{{ $file->title }}</p>
                                     <p>{{ $file->created_at->format('d-m-Y h:m:s a') }}</p>
                                 </div>
-                                {{-- <livewire:files.delete-file :id="$file->id" :key="$key" /> --}}
+                                <livewire:files.deletefile :id="$file->id" :key="$key" />
                             </div>
 
                         </div>
@@ -32,8 +32,8 @@
 
 
     </div>
-    {{-- <div class="text-center px-10 lg:px-32">
+    <div class="text-center px-10 lg:px-32">
         {{ $files->links() }}
-    </div> --}}
+    </div>
 
 </div>
