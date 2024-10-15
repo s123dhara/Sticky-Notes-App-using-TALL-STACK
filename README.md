@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/8f45d1ea-e6dc-4829-b998-61c2a5ec1797)
 # Sticky-Note App using TALL-STACK
 
 In a Sticky-Note App, the title refers to the short, descriptive heading given to each sticky note. It serves as a summary or identifier for the content of the note, making it easy for users to quickly recognize the subject or topic of the note without reading the full content. 
